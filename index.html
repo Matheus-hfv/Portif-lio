@@ -14,7 +14,8 @@
 <body>
 
   <!-- Navbar -->
-  <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top fade-in-up delay-1">
+
     <div class="container">
       <a class="navbar-brand" href="#">MeuPortfólio</a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
@@ -32,63 +33,191 @@
 
   <!-- Hero -->
   <section class="bg-primary text-white text-center py-5">
-    <div class="container">
-      <h1 class="display-4">Olá, eu sou <span class="text-warning">Seu Nome</span></h1>
-      <p class="lead">Desenvolvedor Front-end | Criativo | Apaixonado por tecnologia</p>
-      <a href="#projetos" class="btn btn-light mt-3">Ver Projetos</a>
-    </div>
-  </section>
+  <div class="container">
+    <h1 class="display-4 fade-in-up delay-1">Olá, eu sou <span class="text-warning">Matheus Henrique</span></h1>
+
+<p class="lead fade-in-up delay-2">
+  <span id="typed-text">Desenvolvedor Front-end | back-end | Criativo |</span><span id="cursor">|</span></p>
+    <a href="#projetos" class="btn btn-light mt-3 fade-in-up delay-3">Ver Projetos</a>
+  </div>
+</section>
+
 
   <!-- Sobre -->
   <section id="sobre" class="py-5 bg-light">
-    <div class="container">
-      <h2 class="mb-4 text-center">Sobre Mim</h2>
-      <div class="row align-items-center">
-        <div class="col-md-4 text-center mb-3">
-          <img src="https://source.unsplash.com/300x300/?portrait" class="rounded-circle img-fluid" alt="Minha foto" />
-        </div>
-        <div class="col-md-8">
-          <p>Sou um desenvolvedor focado em criar experiências digitais modernas e interativas. Trabalho com HTML, CSS, JavaScript e outras tecnologias para entregar valor em cada projeto.</p>
-        </div>
+  <div class="container">
+    <h2 class="mb-4 text-center fade-in-up delay-1">Sobre Mim</h2>
+    <div class="row align-items-center">
+      <div class="col-md-4 text-center mb-3 fade-in-up delay-2">
+        <img src="" class="rounded-circle img-fluid" alt="Minha foto" />
+      </div>
+      <div class="col-md-8 fade-in-up delay-3">
+        <p id="sobre">Sou um Desenvolvedor atualmente desenvolvendo aplicações em Java , tenho conhecimento tanto no back-end quanto no Front-end, mas me interesso pelo back-end,
+        estou usando Spring boot , Mysql , Jenkins . Já fiz pojetos  usando e construindo API Rest e Rest-Full .
+        </p>
       </div>
     </div>
-  </section>
+  </div>
+</section>
+
+<section class="py-5 bg-white">
+  <div class="container">
+    <h2 class="mb-4 text-center">Tecnologias</h2>
+
+    <!-- Borda RGB Animada -->
+    <div class="rgb-border p-3 rounded-4">
+
+      <div id="techCarousel" class="carousel slide" data-bs-ride="carousel" >
+        <div class="carousel-inner text-center">
+
+          <!-- Slide 1 -->
+          <div class="carousel-item active">
+            <div class="d-flex justify-content-center gap-4 flex-wrap">
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" width="80" alt="HTML5">
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" width="80" alt="CSS3">
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" width="80" alt="JavaScript">
+            </div>
+          </div>
+
+          <!-- Slide 2 -->
+          <div class="carousel-item">
+            <div class="d-flex justify-content-center gap-4 flex-wrap">
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" width="80" alt="React">
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg" width="80" alt="Bootstrap">
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" width="80" alt="Git">
+            </div>
+          </div>
+
+          <!-- Slide 3 -->
+          <div class="carousel-item">
+            <div class="d-flex justify-content-center gap-4 flex-wrap">
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" width="80" alt="GitHub">
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" width="80" alt="NodeJS">
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" width="80" alt="MySQL">
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Botões -->
+        <button class="carousel-control-prev" type="button" data-bs-target="#techCarousel" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon bg-dark rounded-circle" aria-hidden="true"></span>
+          <span class="visually-hidden">Anterior</span>
+        </button>
+
+        <button class="carousel-control-next" type="button" data-bs-target="#techCarousel" data-bs-slide="next">
+          <span class="carousel-control-next-icon bg-dark rounded-circle" aria-hidden="true"></span>
+          <span class="visually-hidden">Próximo</span>
+        </button>
+      </div>
+
+    </div>
+  </div>
+</section>
 
   <!-- Projetos -->
-  <section id="projetos" class="py-5">
-    <div class="container">
-      <h2 class="mb-4 text-center">Meus Projetos</h2>
-      <div class="row g-4">
-        <div class="col-md-4">
-          <div class="card h-100 shadow-sm">
-            <img src="https://source.unsplash.com/400x250/?website" class="card-img-top" alt="Projeto 1" />
-            <div class="card-body">
-              <h5 class="card-title">Projeto 1</h5>
-              <p class="card-text">Descrição breve do projeto com foco em front-end.</p>
+  <section class="py-5 bg-light" id="projetos">
+  <div class="container">
+    <h2 class="mb-4 text-center" >Meus Projetos</h2>
+
+    <div id="cardCarousel" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-inner">
+
+        <!-- Slide com 3 cards -->
+        <div class="carousel-item active">
+          <div class="d-flex justify-content-center gap-4 flex-wrap">
+            <!-- Card 1 -->
+            <div class="rgb-card card text-center" data-bs-toggle="modal" data-bs-target="#modal1">
+              <div class="card-body">
+                <div class="hover-text">Click</div>
+                <img src="/programming-background-with-person-working-with-codes-computer-1200x800.jpg" class="card-img-top" alt="Projeto 1">
+              </div>
+            </div>
+
+            <!-- Card 2 -->
+            <div class="rgb-card card text-center" data-bs-toggle="modal" data-bs-target="#modal2">
+              <div class="card-body">
+                <div class="hover-text">Click</div>
+                <img src="https://via.placeholder.com/150" class="card-img-top" alt="Projeto 2">
+              </div>
+            </div>
+
+            <!-- Card 3 -->
+            <div class="rgb-card card text-center" data-bs-toggle="modal" data-bs-target="#modal3">
+              <div class="card-body">
+                <div class="hover-text">Click</div>
+                <img src="https://via.placeholder.com/150" class="card-img-top" alt="Projeto 3">
+              </div>
             </div>
           </div>
         </div>
-        <div class="col-md-4">
-          <div class="card h-100 shadow-sm">
-            <img src="https://source.unsplash.com/400x250/?app" class="card-img-top" alt="Projeto 2" />
-            <div class="card-body">
-              <h5 class="card-title">Projeto 2</h5>
-              <p class="card-text">Aplicativo interativo com funcionalidades modernas.</p>
+
+        <!-- Slide com mais 3 cards -->
+        <div class="carousel-item">
+          <div class="d-flex justify-content-center gap-4 flex-wrap">
+            <!-- Card 4 -->
+            <div class="rgb-card card text-center" data-bs-toggle="modal" data-bs-target="#modal4">
+              <div class="card-body">
+                <div class="hover-text">Click</div>
+                <img src="https://via.placeholder.com/150" class="card-img-top" alt="Projeto 4">
+              </div>
+            </div>
+
+            <!-- Card 5 -->
+            <div class="rgb-card card text-center" data-bs-toggle="modal" data-bs-target="#modal5">
+              <div class="card-body">
+                <div class="hover-text">Click</div>
+                <img src="https://via.placeholder.com/150" class="card-img-top" alt="Projeto 5">
+              </div>
+            </div>
+
+            <!-- Card 6 -->
+            <div class="rgb-card card text-center" data-bs-toggle="modal" data-bs-target="#modal6">
+              <div class="card-body">
+                <div class="hover-text">Click</div>
+                <img src="https://via.placeholder.com/150" class="card-img-top" alt="Projeto 6">
+              </div>
             </div>
           </div>
         </div>
-        <div class="col-md-4">
-          <div class="card h-100 shadow-sm">
-            <img src="https://source.unsplash.com/400x250/?code" class="card-img-top" alt="Projeto 3" />
-            <div class="card-body">
-              <h5 class="card-title">Projeto 3</h5>
-              <p class="card-text">Solução completa com integração de APIs e design responsivo.</p>
-            </div>
-          </div>
-        </div>
+
       </div>
+
+      <!-- Botões -->
+      <button class="carousel-control-prev" type="button" data-bs-target="#cardCarousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon bg-dark rounded-circle" aria-hidden="true"></span>
+        <span class="visually-hidden">Anterior</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#cardCarousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon bg-dark rounded-circle" aria-hidden="true"></span>
+        <span class="visually-hidden">Próximo</span>
+      </button>
     </div>
-  </section>
+  </div>
+</section>
+<!--models click-->
+<!-- Exemplo de Modal -->
+<div class="modal fade" id="modal1" tabindex="-1" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content p-3">
+      <img src="/programming-background-with-person-working-with-codes-computer-1200x800.jpg" class="img-fluid rounded" alt="Imagem Projeto 1">
+      <p class="mt-3">Descrição do Projeto 1. Aqui você pode colocar detalhes como tecnologias usadas, funcionalidades e links.</p>
+    </div>
+  </div>
+</div>
+
+<!-- Repita para os outros -->
+<div class="modal fade" id="modal2" tabindex="-1" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content p-3">
+      <img src="https://via.placeholder.com/500x300" class="img-fluid rounded" alt="Imagem Projeto 2">
+      <p class="mt-3">Descrição do Projeto 2.</p>
+    </div>
+  </div>
+</div>
+
+<!-- Continue para os modais 3 até 6... -->
+
 
   <!-- Contato -->
   <section id="contato" class="py-5 bg-light">
